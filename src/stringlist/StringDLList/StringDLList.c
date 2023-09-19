@@ -83,48 +83,6 @@ StringListElement lastStringDLList (StringDLList * aL)
 	return LE;
 }
 
-/*
-int insertStringDLList (StringDLList * aL, StringListElement aE, const unsigned int aP)
-{
-	StringDLListNode* TempNode;
-	StringDLListNode* LastNode;
-
-	TempNode = (StringDLListNode *) malloc (sizeof (StringDLListNode));
-	TempNode->Item = aE;
-	TempNode->Next = NULL;
-	TempNode->Prev = LastNod;
-
-	if (aP >= aL->Size)
-	{
-		return -1;
-	}
-	
-	if (aL->Head == NULL)	 //empty list	
-	{
-		aL->Head = TempNode;
-		LastNode = TempNode;
-		aL->Size = 1;
-		return aP;
-	}
-	unsigned int i;
-	for (i = 0; i < aP; i++)
-	{
-			
-	}
-	if (LastNode != NULL)
-	{
-		LastNode->Next = TempNode;
-		LastNode = TempNode;
-	}
-	aP->Size++;
-	return aP;
-}
-
-int removeStringDLList (StringDLList *, int)
-{
-}
-*/
-
 StringListElement * getStringListElement (StringDLList * aL, const unsigned int aIndex)
 {
 	unsigned int i = 0;

@@ -84,48 +84,6 @@ NodeListElement lastNodeDLList (NodeDLList * aL)
 	return LE;
 }
 
-/*
-int insertNodeDLList (NodeDLList * aL, NodeListElement aE, const unsigned int aP)
-{
-	NodeDLListNode* TempNode;
-	NodeDLListNode* LastNode;
-
-	TempNode = (NodeDLListNode *) malloc (sizeof (NodeDLListNode));
-	TempNode->Item = aE;
-	TempNode->Next = NULL;
-	TempNode->Prev = LastNod;
-
-	if (aP >= aL->Size)
-	{
-		return -1;
-	}
-	
-	if (aL->Head == NULL)	 //empty list	
-	{
-		aL->Head = TempNode;
-		LastNode = TempNode;
-		aL->Size = 1;
-		return aP;
-	}
-	unsigned int i;
-	for (i = 0; i < aP; i++)
-	{
-			
-	}
-	if (LastNode != NULL)
-	{
-		LastNode->Next = TempNode;
-		LastNode = TempNode;
-	}
-	aP->Size++;
-	return aP;
-}
-
-int removeNodeDLList (NodeDLList *, int)
-{
-}
-*/
-
 NodeListElement * getNodeListElement (NodeDLList * aL, const unsigned int aIndex)
 {
 	unsigned int i = 0;

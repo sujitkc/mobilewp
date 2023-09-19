@@ -97,23 +97,19 @@ int checkPrefix (const char * aPrefix, Node * CurrentNode)
 	unsigned int i;
 	if (strlen (aPrefix) == 1 && CurrentNode->Value == aPrefix[0])
 	{
-//		printf ("Prefix[0] = %c here1\n", aPrefix[0]);
 		return 1;
 	}
 	else if (getNoOfChildren (CurrentNode) == 0 || CurrentNode->Value != aPrefix[0])
 	{
-//		printf ("Prefix[0] = %c value = %c here2\n", aPrefix[0], CurrentNode->Value);
 		return 0;
 	}
 	for (i = 0; i < getNoOfChildren (CurrentNode); i++)
 	{
 		if (checkPrefix (aPrefix + 1, getChildByIndex (i, CurrentNode)))
 		{
-//			printf ("Prefix[0] = %c here3\n", aPrefix[0]);
 			return 1;
 		}
 	}
-//	printf ("Prefix[0] = %c value = %c here4\n", aPrefix[0], CurrentNode->Value);
 	return 0;
 }
 
