@@ -1,0 +1,16 @@
+digraph dep { 
+  Dictionary_c -> Dictionary_h;
+  Dictionary_c -> NodeListElement_h;
+  Dictionary_h -> NodeDLList_h;
+  NodeDLList_c -> NodeDLList_h;
+  NodeDLList_h -> NodeListElement_h;
+  NodeListElement_c -> NodeListElement_h;
+  main_c -> Dictionary_h;
+  main_c -> Wp_h;
+  StringDLList_c -> StringDLList_h;
+  StringDLList_h -> StringListElement_h;
+  StringListElement_c -> StringListElement_h;
+  Wp_c -> Wp_h;
+  Wp_c -> Dictionary_h;
+  Wp_h -> StringDLList_h;
+}
